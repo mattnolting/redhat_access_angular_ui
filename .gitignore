@@ -11,3 +11,4 @@ app/redhat_access_angular_ui.js
 app/cases/views/*.html
 !app/cases/views/compact.html
 test/coverage
+Gemfile.lock

@@ -22,6 +22,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-ng-annotate');
     grunt.loadNpmTasks('grunt-angular-gettext');
     grunt.loadNpmTasks('grunt-shell');
+	grunt.loadNpmTasks('grunt-contrib-sass');
     // Define the configuration for all the tasks
     grunt.initConfig({
         distdir: 'dist',
@@ -95,6 +96,18 @@ module.exports = function (grunt) {
                 generated: ['<%= yeoman.app %>/i18n/translations.js']
             }
         },
+        sass: {
+	        options: {
+		        compass: true,
+		        require: ['compass', 'breakpoint'],
+		        style: 'nested',
+		        lineNumbers: true
+	        },
+	        files: {
+		        src: '<%= yeoman.app %>/assets/base.scss',
+		        dest: '<%= yeoman.app %>/assets/css/app.min.css'
+	        }
+        },
         watch: {
             js: {
                 files: ['<%= yeoman.app %>/{,*/}*.js'],
@@ -134,7 +147,19 @@ module.exports = function (grunt) {
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}'
                 ]
-            }
+            },
+	        sass: {
+		        options: {
+			        compass: true,
+			        require: ['compass', 'breakpoint'],
+			        style: 'nested',
+			        lineNumbers: true
+		        },
+		        files: {
+			        src: '/app/assets/sass/**/*.scss',
+			        dest: '/app/assets/css/app.min.css'
+		        }
+	        }
         },
         connect: {
             options: {
