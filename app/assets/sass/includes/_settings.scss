@@ -1,0 +1,148 @@
+//==================================================================
+//
+// Base Settings
+// Note: many components have their own settings
+//
+//==================================================================
+
+
+// Media Queries
+//==================================================================
+$xs:							480px;
+$sm:							768px;
+$md:							992px;
+$lg:							1200px;
+
+
+$base_font_size:				16px;
+$base_line_height:				1.411; // used in @font-face mixin
+
+$base_gutter_width:				30px;
+
+
+// Color Settings
+//==================================================================
+
+$text_color:					#333;		// primary default text color, since it has higher contrast and looks sharper.
+$next_text_color:				#646464;	// reserving for other uses.
+
+// Primary Brand Colors
+$brand_red:						#cc0000;	// Corporate/Tech Colors
+$brand_red_dark:				#a30000;
+
+$brand_orange_dark:				#ec7a08;	// Storage Colors
+$brand_orange:					#f4aa00;
+
+$brand_blue_dark:				#0085cf;	// Infrastructure Colors
+$brand_blue:					#00a8e1;
+
+$brand_green_dark:				#3f9c35;	// App Development Colors
+$brand_green:					#92d400;
+
+$brand_grey_dark:				#59666e;	// Service Colors
+$brand_grey:					#7a858b;
+
+
+// Secondary Brand Colors
+$brand_navy:					#004054;
+$brand_blue_grey:				#37424a;
+$brand_grey_light:				#d1d4d3;
+$brand_powder_blue:				#cae3e9;
+
+$brand_purple:					#564979;	// We have purple!?!
+
+$next_bright_blue:				#08c0fc;
+$next_link_color:				$next_bright_blue;
+
+
+// Nimbus Colors
+$jperry_blue:					#09c;
+$nimbus_link_color:				$brand_blue_dark; // used to be #00ade5
+$umbra_link_color:				$nimbus_link_color; //used to be #06c;
+
+$nav_title_color:				$next_bright_blue;
+
+
+// Web Property Colors
+$headline_grey:					#252527;
+
+$body_black:					#1a1a1a;
+$body_grey:						#4c4c4c;
+$body_grey_alt:					$next_text_color;
+
+$trim_grey:						#8d8d8d;
+$trim_grey_light:				#d2d3d4;
+$accent_grey:					$trim_grey;
+$accent_grey_light:				$trim_grey_light;
+
+$page_grey_light:				#f0f0f0;
+$table_grey_light:				#f7f7f7;
+$zebra:							$table_grey_light;
+$border_color:					#ececec;
+
+// Links
+$link_text_decoration:			none;
+$link_color:					$nimbus_link_color; // If not dark enough, we could go with $brand_blue_dark.
+$link_color_hover:				darken($link_color, 15%);
+
+
+// Alternate Colors
+$dark_grey:						$headline_grey;
+$blue_grey:						$brand_blue_grey;
+$medium_grey:					$body_grey;
+
+// Breadcrumbs
+$breadcrumbs_background:		#e0e0e0;
+
+
+
+
+// Alerts, Information and Validation
+//==================================================================
+$info_color:					#428bca;
+$error_color:					#d9534f;
+$success_color:					#5cb85c;
+
+$alertbox_font_color:			#fff;
+$alertbox_margin:				16px;
+
+
+// Form Block Hover
+//==================================================================
+$form_block_hover:				$table_grey_light;
+
+
+// Navigations & Tabs across the site
+//==================================================================
+$tick_thickness:				4px;
+$tick_width:					32px; // For horizontal tabs
+$tick_height:					1.33; // For vertical tabs
+
+
+// Default "Modules"
+//==================================================================
+$module_padding_top:			60px;
+$module_padding_bottom:			80px;
+$module_padding_top_narrow:		40px;
+$module_padding_bottom_narrow:	50px;
+$module_bg:						$headline_grey;
+$module_color:					#fff;
+
+$sidebar_block_margin_bottom:	60px; // Styleguide "Blog" - Page 8
+$sidebar_nav_margin_bottom:		30px; // Styleguide "Blog" - Page 8
+
+
+// Call Outs
+//==================================================================
+$callout_bg_color: 				#2d2d2f;
+$callout_title_color: 			#fff;
+$callout_paragraph_color: 		$callout_title_color;
+
+
+// Media Settings
+//==================================================================
+$figure_background:				#000;
+$figure_margin:					0 0 16px;
+$figure_opacity:				.9;
+$figure_opacity_hover:			1;
+
